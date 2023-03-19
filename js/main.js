@@ -10,6 +10,7 @@ const handleNav = () => {
 navBtn.addEventListener('click', handleNav)
 
 const handleCurrentYear = () => {
+    
 	const year = new Date().getFullYear()
 	footerYear.innerText = year
 }
