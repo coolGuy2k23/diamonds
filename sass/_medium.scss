@@ -1,2 +1,33 @@
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+	.cards {
+		&__box {
+			padding: 10em 2em;
+		}
+		&__card {
+			&--one {
+				grid-column: 1/4;
+				grid-row: 1/2;
+			}
+			&--two {
+				grid-column: 4/7;
+				grid-row: 1/2;
+			}
+			&--three {
+				grid-column: 7/10;
+				grid-row: 1/2;
+			}
+		}
+	}
+	.plans {
+		padding: 8em 2em;
+
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			align-items: center;
+		}
+		&__item {
+			margin: 0 1em;
+		}
+	}
 }
